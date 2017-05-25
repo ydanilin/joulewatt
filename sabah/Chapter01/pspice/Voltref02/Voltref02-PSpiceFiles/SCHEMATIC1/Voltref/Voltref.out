@@ -1,0 +1,106 @@
+
+**** 09/11/16 08:32:51 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Voltref"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltref0
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Voltref.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../voltref02-pspicefiles/voltref02.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+.stmlib "C:\Cadence\SPB_16.3\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source VOLTREF02
+D_D1         N00085 N00093 DS1 
+D_D2         N00093 0 DS1 
+I_I1         0 N00085 DC 23.8e-3  
+R_R1         0 N00085  {rvariable} TC=0,0 
+.PARAM  rvariable=117.65
+
+**** RESUMING Voltref.cir ****
+.END
+
+**** 09/11/16 08:32:51 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Voltref"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltref0
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DS1             
+          IS   14.110000E-09 
+           N    1.98         
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 09/11/16 08:32:51 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Voltref"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltref0
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00085)    1.4000 (N00093)     .7000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/11/16 08:32:51 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Voltref"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltref0
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

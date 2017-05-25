@@ -1,0 +1,6 @@
+* source VOLTREF02
+D_D1         N00085 N00093 DS1 
+D_D2         N00093 0 DS1 
+I_I1         0 N00085 DC 23.8e-3  
+R_R1         0 N00085  {rvariable} TC=0,0 
+.PARAM  rvariable=117.65

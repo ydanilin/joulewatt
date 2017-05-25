@@ -1,0 +1,80 @@
+
+**** 09/11/16 08:29:30 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Res_sweep"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltre
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Res_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../voltref02-pspicefiles/voltref02.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+.stmlib "C:\Cadence\SPB_16.3\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM rvariable 60 140 0.001 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source VOLTREF02
+D_D1         N00085 N00093 DS1 
+D_D2         N00093 0 DS1 
+I_I1         0 N00085 DC 23.8e-3  
+R_R1         0 N00085  {rvariable} TC=0,0 
+.PARAM  rvariable=60
+
+**** RESUMING Res_sweep.cir ****
+.END
+
+**** 09/11/16 08:29:30 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Res_sweep"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltre
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DS1             
+          IS   14.110000E-09 
+           N    1.98         
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+
+          JOB CONCLUDED
+
+**** 09/11/16 08:29:30 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Res_sweep"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltre
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        5.83
+

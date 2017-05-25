@@ -1,0 +1,42 @@
+
+**** 09/10/16 10:22:37 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vreference"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltr
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Vreference.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+.stmlib "C:\Cadence\SPB_16.3\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.DC LIN I 1e-4 1 1e-4 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source VOLTREF
+D_D1         N00087 N00095 D1N4002 
+D_D2         N00095 0 D1N4002 
+I_I1         0 N00087 DC 4.17e-3  
+
+**** RESUMING Vreference.cir ****
+.END
+
+
+ERROR -- DC device I is undefined

@@ -1,0 +1,4 @@
+* PSpice Model Editor - Version 16.3.0
+*$
+.model DS01 D Is=10e-9 Cjo=0pF Rs=0 n=1
+*$

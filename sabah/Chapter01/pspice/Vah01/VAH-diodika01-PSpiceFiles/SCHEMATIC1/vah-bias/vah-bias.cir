@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-vah-bias"  [ C:\Users\Yuretzz\Documents\Дачное обеспечение\Осциллоскопия\VAHdiodika\Chapter01\pspice\Vah01\vah-diodika01-pspicefiles\schematic1\vah-bias.sim ] 
+
+** Creating circuit file "vah-bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../vah-diodika01-pspicefiles/vah-diodika01.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+.stmlib "C:\Cadence\SPB_16.3\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

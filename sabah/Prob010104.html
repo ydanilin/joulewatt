@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- MathJax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/1.1a/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+</head>
+
+<body style="padding-top: 70px;">
+  <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand" href="../index.html">Brand</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Electronics Woodpecker <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="00toc.html">Sabah book problems</a></li>
+                <li><a href="#">OpAmps</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+      <h2>Problem 1.1.4.</h2>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Problem text:</h3>
+        </div>
+        <div class="panel-body">
+          Consider Equation
+          <div style="width: 300px;">
+            \[{i_D} = {I_S}\left( {{e^{{\raise0.7ex\hbox{${{v_D}}$} \!\mathord{\left/ {\vphantom {{{v_D}} {\eta {V_T}}}}\right.} \!\lower0.7ex\hbox{${\eta {V_T}}$}}}} + 1} \right)\]
+          </div>
+          with <i>&eta;</i> = 1. If <i>i<sub>D</sub></i> = 1 mA, determine <i>I<sub>S</sub></i> for a <i>v<sub>D</sub></i> of: (a) 0.3 V; (b) 0.5 V; (c) 0.7 V.
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Solution:</h3>
+        </div>
+        <div class="panel-body">Although the solution is quite simple, with this problem we would like to show how <i>I<sub>S</sub></i>&nbsp;value affects the diode I-V curve.<br /> The values are the following:<br />
+          <table class="table table-condensed" style="text-align: center; width: 30%">
+            <tbody>
+              <tr>
+                <th style="text-align: center;"><i>v<sub>D</sub></i>, V</th>
+                <th style="text-align: center;"><i>i<sub>D</sub></i>, A</th>
+                <th style="text-align: center;"><i>I<sub>S</sub></i>, A</th>
+              </tr>
+              <tr>
+                <td>0.3</td>
+                <td>0.001</td>
+                <td>9.75&times;10<sup>-9</sup></td>
+              </tr>
+              <tr>
+                <td>0.5</td>
+                <td>0.001</td>
+                <td>4.45&times;10<sup>-12</sup></td>
+              </tr>
+              <tr>
+                <td>0.7</td>
+                <td>0.001</td>
+                <td>2.03&times;10<sup>-15</sup></td>
+              </tr>
+            </tbody>
+          </table>
+          Now let's graph all three cases. You see that
+          <div style="margin: 20px 0px"><object id="svg1" data="../static/svg/01_01_04_iv_graph.svg" type="image/svg+xml"></object></div>
+          <b>the greater the saturation current the earlier I-V curve starts its exponential growing (the lesser the offset voltage)</b>
+        </div>
+        <!-- solution panel content -->
+      </div>
+      <!-- solution panel block -->
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+          <li class="current"><a href="00toc.html">Contents</a></li>
+          <li class="next disabled"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main block jumbotron -->
+  </div>
+  <!-- class container -->
+</body>
+
+</html>

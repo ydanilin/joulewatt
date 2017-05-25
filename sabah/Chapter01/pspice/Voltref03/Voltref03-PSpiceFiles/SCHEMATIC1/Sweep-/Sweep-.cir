@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-Sweep-"  [ C:\Users\Yuretzz\Documents\Дачное обеспечение\Осциллоскопия\VAHdiodika\Chapter01\pspice\Voltref03\voltref03-pspicefiles\schematic1\sweep-.sim ] 
+
+** Creating circuit file "Sweep-.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../Voltref03-pspiceFiles/voltref02.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+.stmlib "C:\Cadence\SPB_16.3\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM rvariable 50 70 0.001 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

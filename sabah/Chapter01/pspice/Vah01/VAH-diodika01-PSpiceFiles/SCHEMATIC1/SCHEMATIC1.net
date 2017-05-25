@@ -1,0 +1,23 @@
+* source VAH-DIODIKA01
+D_D1         N00114 0 DS1 
+R_R1         N00107 N00114  2k TC=0,0 
+V_V1         N00107 0 DC 10  
+V_V2         N00482 0 DC 10  
+R_R2         N00482 N00520  2k TC=0,0 
+D_D2         N00520 N00648 DS2 
+V_V3         N00648 N00791 0.77
+R_R3         0 N00791  2.2 TC=0,0 
+R_R5         0 N01137  2.2 TC=0,0 
+R_R4         N01023 N01061  2k TC=0,0 
+V_V4         N01023 0 DC 10  
+V_V5         N01255 N01137 0.77
+X_S1    N01061 N01255 N01061 N01255 SCHEMATIC1_S1 
+I_I1         N02033 0 DC 1e-3Adc  
+D_D3         N02037 N01835 DS3 
+D_D4         N01835 0 DS3 
+R_R6         N02033 N02037  300 TC=0,0 
+
+.subckt SCHEMATIC1_S1 1 2 3 4  
+S_S1         3 4 1 2 SD1
+RS_S1         1 2 1G
+.ends SCHEMATIC1_S1

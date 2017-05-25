@@ -1,0 +1,10 @@
+* PSpice Model Editor - Version 16.3.0
+*$
+.model DS3 D Is=10e-9 Cjo=.1pF Rs=0 n=2
+*$
+.model SD1 VSWITCH Roff=1e6 Ron=1.0u Voff=0.0 Von=0.01m
+*$
+.model DS2 D Is=1.5e-9 Cjo=.1pF Rs=0 n=1e-6
+*$
+.model DS1 D Is=1.5e-9 Cjo=.1pF Rs=0 n=2
+*$

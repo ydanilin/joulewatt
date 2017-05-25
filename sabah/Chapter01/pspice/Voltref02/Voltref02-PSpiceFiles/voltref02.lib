@@ -1,0 +1,4 @@
+* PSpice Model Editor - Version 16.3.0
+*$
+.model DS1 D Is=14.11e-9 Cjo=.1pF Rs=.1 n=1.98
+*$

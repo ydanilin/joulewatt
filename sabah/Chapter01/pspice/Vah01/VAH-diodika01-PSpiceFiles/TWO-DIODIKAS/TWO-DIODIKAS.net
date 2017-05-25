@@ -1,0 +1,5 @@
+* source VAH-DIODIKA01
+D_D4         N02145 0 DS3 
+D_D3         N02219 N02145 DS3 
+I_I1         0 N02283 DC 1e-3Adc  
+R_R6         N02283 N02219  300 TC=0,0 

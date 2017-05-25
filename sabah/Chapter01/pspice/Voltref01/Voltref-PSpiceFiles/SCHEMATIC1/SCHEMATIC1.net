@@ -1,0 +1,4 @@
+* source VOLTREF
+D_D1         N00087 N00095 D1N4002 
+D_D2         N00095 0 D1N4002 
+I_I1         0 N00087 DC 11.9e-3  

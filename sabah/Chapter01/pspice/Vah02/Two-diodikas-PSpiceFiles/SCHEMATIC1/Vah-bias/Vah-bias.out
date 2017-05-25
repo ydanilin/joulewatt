@@ -1,0 +1,102 @@
+
+**** 09/10/16 09:51:27 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vah-bias"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Vah02\T
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Vah-bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../two-diodikas-pspicefiles/two-diodikas.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+.stmlib "C:\Cadence\SPB_16.3\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TWO-DIODIKAS
+I_I1         0 N00561 DC 5e-3  
+D_D1         N00088 0 DS01 
+D_D2         N00561 N00088 DS01 
+R_R1         0 N00088  1k TC=0,0 
+
+**** RESUMING Vah-bias.cir ****
+.END
+
+**** 09/10/16 09:51:27 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vah-bias"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Vah02\T
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DS01            
+          IS   10.000000E-09 
+
+
+**** 09/10/16 09:51:27 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vah-bias"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Vah02\T
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00088)     .3376 (N00561)     .6770 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/10/16 09:51:27 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vah-bias"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Vah02\T
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

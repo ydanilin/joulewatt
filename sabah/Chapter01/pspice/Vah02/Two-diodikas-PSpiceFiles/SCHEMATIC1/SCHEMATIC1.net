@@ -1,0 +1,5 @@
+* source TWO-DIODIKAS
+I_I1         0 N00561 DC 5e-3  
+D_D1         N00088 0 DS01 
+D_D2         N00561 N00088 DS01 
+R_R1         0 N00088  1k TC=0,0 

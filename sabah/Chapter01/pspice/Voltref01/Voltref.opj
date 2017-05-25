@@ -1,0 +1,77 @@
+(ExpressProject "Voltref"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\voltref.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\voltref-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\voltref-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\voltref-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\voltref-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\voltref-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\voltref-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\voltref-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\voltref-pspicefiles\schematic1\vreference.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\voltref-pspicefiles\schematic1\vreference.sim"
+        (DisplayName "SCHEMATIC1-Vreference")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_16.3\tools\capture\library\pspice")
+  (PartMRUSelector
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (D1N4002
+      (FullPartName "D1N4002.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 324"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1172 75 437")
+        (Scroll "0 0")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\YURETZZ\DOCUMENTS\ƒ¿◊ÕŒ≈ Œ¡≈—œ≈◊≈Õ»≈\Œ—÷»ÀÀŒ— Œœ»ﬂ\VAHDIODIKA\CHAPTER01\PSPICE\VOLTREF01\VOLTREF.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

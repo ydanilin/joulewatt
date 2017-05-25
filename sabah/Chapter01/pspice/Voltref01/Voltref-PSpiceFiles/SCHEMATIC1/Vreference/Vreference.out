@@ -1,0 +1,110 @@
+
+**** 09/10/16 10:27:10 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vreference"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltr
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Vreference.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.3\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+.stmlib "C:\Cadence\SPB_16.3\tools\pspice\library\nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source VOLTREF
+D_D1         N00087 N00095 D1N4002 
+D_D2         N00095 0 D1N4002 
+I_I1         0 N00087 DC 11.9e-3  
+
+**** RESUMING Vreference.cir ****
+.END
+
+**** 09/10/16 10:27:10 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vreference"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltr
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4002         
+          IS   14.110000E-09 
+           N    1.984        
+         ISR  100.000000E-12 
+         IKF   94.81         
+          BV  100.1          
+         IBV   10            
+          RS     .03389      
+          TT    4.761000E-06 
+         CJO   51.170000E-12 
+          VJ     .3905       
+           M     .2762       
+
+
+**** 09/10/16 10:27:10 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vreference"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltr
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00087)    1.4006 (N00095)     .7003 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/10/16 10:27:10 ******* PSpice 16.3.0 (June 2009) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Vreference"  [ C:\USERS\YURETZZ\DOCUMENTS\дювмне наеяоевемхе\няжхккняйнохъ\VAHDIODIKA\CHAPTER01\PSPICE\Voltr
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+
