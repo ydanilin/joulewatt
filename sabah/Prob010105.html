@@ -11,7 +11,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- MathJax -->
-  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/1.1a/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/1.1a/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 </head>
 
 <body style="padding-top: 70px;">
@@ -34,7 +34,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Electronics Woodpecker <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Sabah book problems</a></li>
+                <li><a href="00toc.html">Sabah book problems</a></li>
                 <li><a href="#">OpAmps</a></li>
               </ul>
             </li>
@@ -58,27 +58,54 @@
       <!-- /.container-fluid -->
     </nav>
     <div class="jumbotron">
-      <h3>Nassir H. Sabah: Electronics: Basic, Analog, and Digital with PSpice<br>
-        <small>
-      Searched for a book about diodes and transistors, preferably with PSpice exercises and found pretty good one!<br>
-      Here I will publish selected problems from the book, trying to highlight the essence</small>
-    </h3>
+      <h2>Problem 1.1.5.</h2>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Problem listing:</h3>
+          <h3 class="panel-title">Problem text:</h3>
         </div>
         <div class="panel-body">
+          Assuming that in an ideal Si diode <span>\(e^{v_D/\eta V_t} \gg 1\)</span>. Than:
           <ul class="list-unstyled">
-            <li>Chapter 1. Basic Diode Circuits</li>
+            <li>(a) what is the change in <i>v<sub>D</sub></i> that multiplies <i>i<sub>D</sub></i> by a factor <i>k</i>?</li>
+            <li>(b) what is the change in <i>v<sub>D</sub></i> that doubles <i>i<sub>D</sub></i> assuming <i>&eta;</i> = 2?</li>
+            <li>(c) what is the change in <i>v<sub>D</sub></i> that multiplies <i>i<sub>D</sub></i> by a factor of 10 assuming:</li>
             <ul>
-              <li><a href="Prob010104.html">P 1.1.4</a></li>
-              <li><a href="Prob010105.html">P 1.1.5</a></li>
+              <li>(i) <i>&eta;</i> = 2, and</li>
+              <li>(ii) <i>&eta;</i> = 1.</li>
             </ul>
+            <li>(d) If <i><b>&Delta;</b>v<sub>D</sub></i> is the change in <i>v<sub>D</sub></i> that causes a 10-fold change in <i>i<sub>D</sub></i>, the diode is referred to as a <i><b>&Delta;</b>v<sub>D</sub></i> &#8725; decade diode. What is <i>&eta;</i>              for a 0.1 V &#8725; decade diode?</il>
           </ul>
-
         </div>
       </div>
 
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Solution:</h3>
+        </div>
+        <div class="panel-body">
+          <div>(a):</div>
+          <div>As we know from P 1.1.2, very often it is worth to drop off &quot;1&quot; in the Main Diode Formula. To derive the <i>k</i> ratio, let's construct a quotient</div>
+          <div>
+            \[\frac{{k{i_S}}}{{{i_S}}} = \frac{{{I_S}{e^{{\raise0.7ex\hbox{${{v_D} + \Delta v}$} \!\mathord{\left/ {\vphantom {{{v_D} + \Delta v} {n{V_T}}}}\right.} \!\lower0.7ex\hbox{${n{V_T}}$}}}}}}{{{I_S}{e^{{\raise0.7ex\hbox{${{v_D}}$} \!\mathord{\left/ {\vphantom
+            {{{v_D}} {n{V_T}}}}\right.} \!\lower0.7ex\hbox{${n{V_T}}$}}}}}} \hspace{1cm} \Rightarrow \hspace{1cm} k = e\frac{{{v_D} + \Delta v - {v_D}}}{{n{V_T}}}\]
+          </div>
+          <div>from which we can easily derive</div>
+
+        </div>
+        <!-- solution panel content -->
+      </div>
+      <!-- solution panel block -->
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="Prob010104.html"><span aria-hidden="true">&larr;</span> P 1.1.4</a></li>
+          <li class="current"><a href="00toc.html">Contents</a></li>
+          <li class="next disabled"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main block jumbotron -->
+  </div>
+  <!-- class container -->
 </body>
 
 </html>
