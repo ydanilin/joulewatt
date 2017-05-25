@@ -83,14 +83,41 @@
           <h3 class="panel-title">Solution:</h3>
         </div>
         <div class="panel-body">
-          <div>(a):</div>
-          <div>As we know from P 1.1.2, very often it is worth to drop off &quot;1&quot; in the Main Diode Formula. To derive the <i>k</i> ratio, let's construct a quotient</div>
+          <div>(a):<br>
+          As we know from P 1.1.2, very often it is worth to drop off &quot;1&quot; in the Main Diode Formula. To derive the <i>k</i> ratio, let's construct a quotient</div>
           <div>
             \[\frac{{k{i_S}}}{{{i_S}}} = \frac{{{I_S}{e^{{\raise0.7ex\hbox{${{v_D} + \Delta v}$} \!\mathord{\left/ {\vphantom {{{v_D} + \Delta v} {n{V_T}}}}\right.} \!\lower0.7ex\hbox{${n{V_T}}$}}}}}}{{{I_S}{e^{{\raise0.7ex\hbox{${{v_D}}$} \!\mathord{\left/ {\vphantom
             {{{v_D}} {n{V_T}}}}\right.} \!\lower0.7ex\hbox{${n{V_T}}$}}}}}} \hspace{1cm} \Rightarrow \hspace{1cm} k = e\frac{{{v_D} + \Delta v - {v_D}}}{{n{V_T}}}\]
           </div>
           <div>from which we can easily derive</div>
-
+          <div>\[\Delta v = \eta V_T \ln k\]</div>
+          <div><b>Note that than <span>\(e^{v_D/\eta V_t} \gg 1\)</span>, <i>&Delta;v</i> values do not depend on diode current.</b></div>
+	  <div>(b), (c):<br>
+          Now we can calculate the required voltage changes:
+          <table class="table table-condensed" style="text-align: center; width: 30%">
+            <tbody>
+              <tr>
+                <th style="text-align: center;"><i>k</i></th>
+                <th style="text-align: center;"><i>&eta;</i> = 2</th>
+                <th style="text-align: center;"><i>&eta;</i> = 1</th>
+              </tr>
+              <tr>
+                <td><b>2</b></td>
+                <td>0.036</td>
+                <td>0.018</td>
+              </tr>
+              <tr>
+                <td><b>10</b></td>
+                <td>0.120</td>
+                <td>0.060</td>
+              </tr>
+            </tbody>
+          </table>
+          You can see that at <i>&eta;</i> = 1 voltage changes are shorter, which means current increases more rapidly. So, <b>the lesser <i>&eta;</i> value, the steeper the I-V curve.</b>
+          </div>
+          <div>(d):<br>
+          A decade is the <i>multiplier-by-10</i>. Suppose we have a value of 0.1. The 1<sup>st</sup> decade will be 0.1&times;10 = 1, 2<sup>nd</sup> decade - 0.1&times;10&times;10 = 10, 3<sup>rd</sup> decade - 0.1&times;10&times;10&times;10 = 100 and so one. Simply put, this is a factor of 10<sup>n</sup>.
+          </div>
         </div>
         <!-- solution panel content -->
       </div>
