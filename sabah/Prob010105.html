@@ -83,8 +83,7 @@
           <h3 class="panel-title">Solution:</h3>
         </div>
         <div class="panel-body">
-          <div>(a):<br>
-          As we know from P 1.1.2, very often it is worth to drop off &quot;1&quot; in the Main Diode Formula. To derive the <i>k</i> ratio, let's construct a quotient</div>
+          <div>(a):<br> As we know from P 1.1.2, very often it is worth to drop off &quot;1&quot; in the Main Diode Formula. To derive the <i>k</i> ratio, let's construct a quotient</div>
           <div>
             \[\frac{{k{i_S}}}{{{i_S}}} = \frac{{{I_S}{e^{{\raise0.7ex\hbox{${{v_D} + \Delta v}$} \!\mathord{\left/ {\vphantom {{{v_D} + \Delta v} {n{V_T}}}}\right.} \!\lower0.7ex\hbox{${n{V_T}}$}}}}}}{{{I_S}{e^{{\raise0.7ex\hbox{${{v_D}}$} \!\mathord{\left/ {\vphantom
             {{{v_D}} {n{V_T}}}}\right.} \!\lower0.7ex\hbox{${n{V_T}}$}}}}}} \hspace{1cm} \Rightarrow \hspace{1cm} k = e\frac{{{v_D} + \Delta v - {v_D}}}{{n{V_T}}}\]
@@ -92,31 +91,67 @@
           <div>from which we can easily derive</div>
           <div>\[\Delta v = \eta V_T \ln k\]</div>
           <div><b>Note that than <span>\(e^{v_D/\eta V_t} \gg 1\)</span>, <i>&Delta;v</i> values do not depend on diode current.</b></div>
-	  <div>(b), (c):<br>
-          Now we can calculate the required voltage changes:
-          <table class="table table-condensed" style="text-align: center; width: 30%">
-            <tbody>
-              <tr>
-                <th style="text-align: center;"><i>k</i></th>
-                <th style="text-align: center;"><i>&eta;</i> = 2</th>
-                <th style="text-align: center;"><i>&eta;</i> = 1</th>
-              </tr>
-              <tr>
-                <td><b>2</b></td>
-                <td>0.036</td>
-                <td>0.018</td>
-              </tr>
-              <tr>
-                <td><b>10</b></td>
-                <td>0.120</td>
-                <td>0.060</td>
-              </tr>
-            </tbody>
-          </table>
-          You can see that at <i>&eta;</i> = 1 voltage changes are shorter, which means current increases more rapidly. So, <b>the lesser <i>&eta;</i> value, the steeper the I-V curve.</b>
+          <div>(b), (c):<br> Now we can calculate the required voltage changes:
+            <table class="table table-condensed" style="text-align: center; width: 30%">
+              <tbody>
+                <tr>
+                  <th style="text-align: center;"><i>k</i></th>
+                  <th style="text-align: center;"><i>&eta;</i> = 2</th>
+                  <th style="text-align: center;"><i>&eta;</i> = 1</th>
+                </tr>
+                <tr>
+                  <td><b>2</b></td>
+                  <td>0.036</td>
+                  <td>0.018</td>
+                </tr>
+                <tr>
+                  <td><b>10</b></td>
+                  <td>0.120</td>
+                  <td>0.060</td>
+                </tr>
+              </tbody>
+            </table>
+            You can see that at <i>&eta;</i> = 1 voltage changes are shorter, which means current increases more rapidly. So, <b>the lesser <i>&eta;</i> value, the steeper the I-V curve.</b>
           </div>
-          <div>(d):<br>
-          A decade is the <i>multiplier-by-10</i>. Suppose we have a value of 0.1. The 1<sup>st</sup> decade will be 0.1&times;10 = 1, 2<sup>nd</sup> decade - 0.1&times;10&times;10 = 10, 3<sup>rd</sup> decade - 0.1&times;10&times;10&times;10 = 100 and so one. Simply put, this is a factor of 10<sup>n</sup>.
+          <div>(d):<br> A decade is a <i>multiplier-by-10</i>. Suppose we have a value of 0.1. The 1<sup>st</sup> decade will be 0.1&times;10 = 1, 2<sup>nd</sup> decade - 0.1&times;10&times;10 = 10, 3<sup>rd</sup> decade - 0.1&times;10&times;10&times;10 =
+            100 and so one. Simply put, this is a factor of 10<sup>n</sup>.<br> Thus, for 0.1<i>V</i> per decade diode <i><b>&Delta;</b>V</i> = 0.1, <i>k</i> = 10. Based on the formula above, <i>&eta;</i> = <b>1.67</b>.<br> Now, to illustrate all the
+            stuff we have learned in this problem, let's graph I-V curves for <i>&eta;</i> = 1, 1.67, 2. For <i>I<sub>S</sub></i> we can take arbitrary value of 9.75&times;10<sup>-9</sup>:
+          </div>
+          <div class="row" style="margin-top: 10px">
+            <div class="col-md-6">
+              First, we will tabulate iDs for voltages from 0 to 0.55. From the table below you can see once again that <b>with <i>&eta;</i> increment diode currents decrease dramatically.</b>
+              <table class="table table-condensed" style="text-align: center;">
+                <thead>
+                  <tr>
+                    <th rowspan="2" style="text-align: center; vertical-align: middle;"><i>v<sub>D</sub></i></th>
+                    <th colspan="3" style="text-align: center;"><i>i<sub>D</sub></i></th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: center;"><i>&eta;</i> = 1</th>
+                    <th style="text-align: center;"><i>&eta;</i> = 1.67</th>
+                    <th style="text-align: center;"><i>&eta;</i> = 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                   <tr><td>0</td><td>1.95&times;10<sup>-8</sup></td><td>1.95&times;10<sup>-8</sup></td><td>1.95&times;10<sup>-8</sup></td></tr>
+                   <tr><td>0.05</td><td>7.64&times;10<sup>-8</sup></td><td>4.06&times;10<sup>-8</sup></td><td>3.52&times;10<sup>-8</sup></td></tr>
+                   <tr><td>0.1</td><td>4.66&times;10<sup>-7</sup></td><td>1.07&times;10<sup>-7</sup></td><td>7.64&times;10<sup>-8</sup></td></tr>
+                   <tr><td>0.15</td><td>3.13&times;10<sup>-6</sup></td><td>3.18&times;10<sup>-7</sup></td><td>1.84&times;10<sup>-7</sup></td></tr>
+                   <tr><td>0.2</td><td>2.14&times;10<sup>-5</sup></td><td>9.86&times;10<sup>-7</sup></td><td>4.66&times;10<sup>-7</sup></td></tr>
+                   <tr><td>0.25</td><td>1.46&times;10<sup>-4</sup></td><td>3.10&times;10<sup>-6</sup></td><td>1.20&times;10<sup>-6</sup></td></tr>
+                   <tr><td>0.3</td><td>1.00&times;10<sup>-3</sup></td><td>9.77&times;10<sup>-6</sup></td><td>3.13&times;10<sup>-6</sup></td></tr>
+                   <tr><td>0.35</td><td>6.84&times;10<sup>-3</sup></td><td>3.09&times;10<sup>-5</sup></td><td>8.18&times;10<sup>-6</sup></td></tr>
+                   <tr><td>0.4</td><td>4.68&times;10<sup>-2</sup></td><td>9.77&times;10<sup>-5</sup></td><td>2.14&times;10<sup>-5</sup></td></tr>
+                   <tr><td>0.45</td><td>0.320</td><td>3.09&times;10<sup>-4</sup></td><td>5.59&times;10<sup>-5</sup></td></tr>
+                   <tr><td>0.5</td><td>2.191</td><td>9.77&times;10<sup>-4</sup></td><td>1.46&times;10<sup>-4</sup></td></tr>
+                   <tr><td>0.55</td><td>14.994</td><td>3.09&times;10<sup>-3</sup></td><td>3.82&times;10<sup>-4</sup></td></tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="col-md-6">
+              Also, the values from the table show us that it's impossible to plot all three I-V curves on the same graph because <i>&eta;</i> = 1.6 and 2 curves will disappear at <i>x</i>-axis.<br>
+              Instead, we will plot them at <i>logarithmic scale</i>, where each tick represents an order of magnitude, <i>n</i> in 10<sup><i>n</i></sup>.
+            </div>
           </div>
         </div>
         <!-- solution panel content -->
