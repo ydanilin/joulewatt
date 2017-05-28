@@ -1,0 +1,27 @@
+"*":
+  "atom-shell-commands":
+    commands: [
+      {
+        name: "Asymptote"
+        command: "asy"
+        arguments: [
+          "{FileName}"
+        ]
+        options:
+          cwd: "{FileDir}"
+          keymap: "ctrl-1"
+      }
+    ]
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    useProxySettingsWhenCallingApm: false
+  editor:
+    fontSize: 17
+  "exception-reporting":
+    userId: "6168bd82-c26b-4659-865e-110cf5aa5b8a"
+  welcome:
+    showOnStartup: false
