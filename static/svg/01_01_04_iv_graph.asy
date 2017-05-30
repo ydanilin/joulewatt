@@ -30,9 +30,9 @@ real maxV = max(maxV1, maxV2, maxV3);
 xaxis( Label("$v$", align=N, fontsize(8pt)), Ticks(new real[]{0.3, 0.5, 0.7}), Arrow, xmax=maxV*1.1);
 yaxis( Label("$i, A \times 500$", align=E, fontsize(8pt)), Arrow);
 
-real f1(real x) {return magnify*(Is1*(exp(x/(Eta*Vt))-1));}
-real f2(real x) {return magnify*(Is2*(exp(x/(Eta*Vt))-1));}
-real f3(real x) {return magnify*(Is3*(exp(x/(Eta*Vt))-1));}
+real f1(real x) {return magnify*(Is1*(exp(x/(Eta*Vt))+1));}
+real f2(real x) {return magnify*(Is2*(exp(x/(Eta*Vt))+1));}
+real f3(real x) {return magnify*(Is3*(exp(x/(Eta*Vt))+1));}
 
 path mA = (0, 0.001*magnify) -- (maxV, 0.001*magnify);
 path g1 = graph(f1, 0, maxV1, operator ..);
@@ -51,8 +51,3 @@ dot((0.5, 0.001*magnify), green);
 label("$4.45 \times 10^{-12}$", (0.5, 0.001*magnify), align=2S+1.8W, fontsize(8pt)+green);
 dot((0.7, 0.001*magnify), blue);
 label("$2.03 \times 10^{-15}$", (0.7, 0.001*magnify), align=2S+1.8W, fontsize(8pt)+blue);
-
-
-
-
-

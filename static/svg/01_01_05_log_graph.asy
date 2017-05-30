@@ -11,45 +11,38 @@ batchView=false;
 
 // drawing properties
 size(10cm);
-//outformat="svg";
+outformat="svg";
 import graph;
 
-void grid(picture pic=currentpicture,
-          real xmin=pic.userMin().x, real xmax=pic.userMax().x,
-          real ymin=pic.userMin().y, real ymax=pic.userMax().y,
-          real xStep=1, real xstep=.5,
-          real yStep=1, real ystep=.5,
-          pen pTick=nullpen, pen ptick=grey, bool above=false)
-{
-  draw(pic,box((xmin,ymin),(xmax,ymax)),invisible);
-  xaxis(pic, BottomTop, xmin, xmax,
-        Ticks("%",extend=true,Step=xStep,step=xstep,pTick=pTick,ptick=ptick),
-        above=above, p=nullpen);
-  yaxis(pic, LeftRight, ymin, ymax,
-        Ticks("%",extend=true,Step=yStep,step=ystep,pTick=pTick,ptick=ptick),
-        above=above, p=nullpen);
-}
-
-grid(xStep=1, xstep=1,
-     yStep=1, ystep=1,
-     pTick=.8red,
-     ptick=dotted+.7bp+.4white,
-     above=false
-     );
+real XMin = 0;
+real XMax = 6.5;
+real YMin = -8;
+real YMax = 1.8;
 
 real Vt = 0.026;
 real Is = 9.748e-9;
 
 real f1(real x) {return Is*(exp(x/(2*Vt))+1);}
-real f2(real x) {return Is*(exp(x/(1.6*Vt))+1);}
+real f2(real x) {return Is*(exp(x/(1.67*Vt))+1);}
 real f3(real x) {return Is*(exp(x/(1*Vt))+1);}
 
-ticks xticks = RightTicks(Label("", fontsize(8pt)), NoZero, Step=0.1, step=0);
+//write(f2(0.4));
+
+ticks xticks = RightTicks(Label("", fontsize(8pt), Fill(white)), NoZero, Step=0.1, step=0);
 ticks yticks = LeftTicks(Label("", fontsize(8pt)), N=1, n=1);
+xaxis( Label("$v_D$", align=N, fontsize(8pt)), ticks=xticks, xmin=XMin, xmax=XMax, Arrow);
+yaxis( Label("$i_D$", align=E, fontsize(8pt)), ticks=yticks, ymin=YMin, ymax=YMax, Arrow);
 
-xaxis( Label("$v_D$", align=N, fontsize(8pt)), ticks=xticks, xmin=0, xmax=6.5, Arrow);
-yaxis( Label("$i_D$", align=E, fontsize(8pt)), ticks=yticks, ymin=-8, ymax=1.8, Arrow);
+// grid
+draw(box((XMin,YMin),(XMax,YMax)),invisible);
+xaxis(BottomTop, XMin, XMax,
+      Ticks("%", extend=true, Step=0.1, step=0, pTick=grey),
+      p=nullpen);
+yaxis(LeftRight, YMin, YMax,
+      Ticks("%", extend=true, N=1, n=1, pTick=grey),
+      p=nullpen);
 
+// scale is after coordinate system definition
 scale(Linear(10), Log);
 path g1 = graph(f1, 0, 0.55);
 path g2 = graph(f2, 0, 0.55);
@@ -58,3 +51,7 @@ path g3 = graph(f3, 0, 0.55);
 draw(g1, blue);
 draw(g2, red);
 draw(g3, green);
+
+label("$\eta = 1$", (5, log10(3)), align=W, fontsize(8pt)+green, Fill(white));
+label("$\eta = 1.67$", (5, log10(0.0015)), align=W, fontsize(8pt)+red, Fill(white));
+label("$\eta = 2$", (4.8, log10(0.000065)), align=E, fontsize(8pt)+blue, Fill(white));
