@@ -10,21 +10,21 @@ interactiveView=false;
 batchView=false;
 
 // drawing properties
-size(10cm);
+size(12cm);
 outformat="svg";
 import graph;
 
-real XMin = 0;
+real XMin = 0.005;
 real XMax = 6.5;
-real YMin = -8;
-real YMax = 1.8;
+real YMin = -9;
+real YMax = 1.4;
 
 real Vt = 0.026;
 real Is = 9.748e-9;
 
-real f1(real x) {return Is*(exp(x/(2*Vt))+1);}
-real f2(real x) {return Is*(exp(x/(1.67*Vt))+1);}
-real f3(real x) {return Is*(exp(x/(1*Vt))+1);}
+real f1(real x) {return Is*(exp(x/(2*Vt))-1);}
+real f2(real x) {return Is*(exp(x/(1.67*Vt))-1);}
+real f3(real x) {return Is*(exp(x/(1*Vt))-1);}
 
 //write(f2(0.4));
 
@@ -44,9 +44,9 @@ yaxis(LeftRight, YMin, YMax,
 
 // scale is after coordinate system definition
 scale(Linear(10), Log);
-path g1 = graph(f1, 0, 0.55);
-path g2 = graph(f2, 0, 0.55);
-path g3 = graph(f3, 0, 0.55);
+path g1 = graph(f1, XMin, 0.55);
+path g2 = graph(f2, XMin, 0.55);
+path g3 = graph(f3, XMin, 0.55);
 
 draw(g1, blue);
 draw(g2, red);
