@@ -1,4 +1,7 @@
-\documentclass [a4paper] {article}
+%\documentclass [12pt] {article}
+
+\documentclass[14pt]{extreport}
+\usepackage[a4paper, margin=2 cm]{geometry}
 \begin{document}
 What's this?\\
 \LaTeX\ is fun.\\
@@ -26,13 +29,12 @@ Sch\"on b\^et\'e
   \verb|$x\mathrel{+}x$| & $x\mathrel{+}x$ & \setbox0=\hbox{$x\mathrel{+}x$} \the\wd0 \\[10pt]
 
   \multicolumn{3}{c}{Spaces bilatt} \\[5pt]
-  \LaTeX & Typeset & width \\ \hline
+  \LaTeX & Typeset & width \\ \hline \\[-12pt]
   Ordinal: \ \verb|$x^2\ /2$| & $x^2\ /2$ & \setbox0=\hbox{$x^2\ /2$} \the\wd0 \\
-  Thin: \ \verb|$x^2\, /2$| & $x^2\, /2$ & \setbox0=\hbox{$x^2\, /2$} \the\wd0 \\
-  Medium: \ \verb|$x^2\> /2$| & $x^2\> /2$ & \setbox0=\hbox{$x^2\> /2$} \the\wd0 \\
-  Big: \ \verb|$x^2\; /2$| & $x^2\; /2$ & \setbox0=\hbox{$x^2\; /2$} \the\wd0 \\
-  Ordinal: \ \verb|$x^2\ /2$| & $x^2\ /2$ & \setbox0=\hbox{$x^2\ /2$} \the\wd0 \\
-  Small: \ \verb|$x^2\! /2$| & $x^2\! /2$ & \setbox0=\hbox{$x^2\! /2$} \the\wd0 \\
+  Thin: \    \verb|$x^2\, /2$| & $x^2\, /2$ & \setbox0=\hbox{$x^2\, /2$} \the\wd0 \\
+  Medium: \  \verb|$x^2\> /2$| & $x^2\> /2$ & \setbox0=\hbox{$x^2\> /2$} \the\wd0 \\
+  Big: \     \verb|$x^2\; /2$| & $x^2\; /2$ & \setbox0=\hbox{$x^2\; /2$} \the\wd0 \\
+  Small: \   \verb|$x^2\! /2$| & $x^2\! /2$ & \setbox0=\hbox{$x^2\! /2$} \the\wd0 \\
 \end{tabular}
 
 \end{document}
