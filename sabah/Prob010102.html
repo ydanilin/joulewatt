@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- MathJax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/1.1a/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+</head>
+
+<body style="padding-top: 70px;">
+  <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand" href="../index.html">Brand</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Electronics Woodpecker <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="00toc.html">Sabah book problems</a></li>
+                <li><a href="#">OpAmps</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+      <h2>Problem 1.1.2.</h2>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Problem text:</h3>
+        </div>
+        <div class="panel-body">
+          A diode has <i>i<sub>D</sub></i> = 1 A at <i>v<sub>D</sub></i> = 0.7 V
+           and <i>i<sub>D</sub></i> = 2 A at <i>v<sub>D</sub></i> = 0.73 V.
+            Determine <i>I<sub>S</sub></i> and <i>&eta;</i>.<br>
+          What is <i>r<sub>D</sub></i> in both cases?
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Solution:</h3>
+        </div>
+        <div class="panel-body">
+          The solution is as easy as to create two equations with two unknowns.
+           But if you attemp to do it with the complete Main Diode Formula
+          <div style="width: 300px;">
+           \[{i_D} = {I_S}\left( {{e^{{\raise0.7ex\hbox{${{v_D}}$} \!\mathord{\left/ {\vphantom {{{v_D}} {\eta {V_T}}}}\right.} \!\lower0.7ex\hbox{${\eta {V_T}}$}}}} - 1} \right)\]
+          </div>
+          you will end up fairly frustraited to do it analytically (you can try
+           it if you do not believe:-) ).<br>
+          I remember once our physics mentor told us: &laquo;The art of the science is what to neglect&raquo;.
+           The currents in the problem text are quite high for our exponent formula,
+            therefore we can easily drop off the &laquo;1&raquo; in our equation! With this
+             our life becomes much better.<br>
+          First, let us calculate <i>v<sub>D</sub></i> &#8725; <i>V<sub>T</sub></i> for
+           both cases:<br>
+          <i>v<sub>D<sub>1</sub></sub></i> &#8725; <i>V<sub>T</sub></i> =
+           0.7 &#8725; 0.026 = 26.9231 and
+            <i>v<sub>D<sub>2</sub></sub></i> &#8725; <i>V<sub>T</sub></i> =
+             0.73 &#8725; 0.026 = 28.0769 <br>
+          Based on simplified diode current formula<br>
+          <div style="width: 300px;">
+            \[{i_D} = {I_S} {{e^{{\raise0.7ex\hbox{${{v_D}}$} \!\mathord{\left/ {\vphantom {{{v_D}} {\eta {V_T}}}}\right.} \!\lower0.7ex\hbox{${\eta {V_T}}$}}}}} \]
+          </div>
+          we create two equations
+          <div style="width: 300px;">
+            \[ 1 = {I_S} {{e^{{\raise0.7ex\hbox{${26.9231}$} \!\mathord{\left/ {\vphantom {{26} \eta}}\right.} \!\lower0.7ex\hbox{$\eta$}}}}} \]
+          </div>
+          <div style="width: 300px;">
+            \[ 2 = {I_S} {{e^{{\raise0.7ex\hbox{${28.0769}$} \!\mathord{\left/ {\vphantom {{26} \eta}}\right.} \!\lower0.7ex\hbox{$\eta$}}}}} \]
+          </div>
+          Substituting <i>I<sub>S</sub></i> from the above yelds
+          <div style="width: 300px;">
+            \[
+              2 = \frac { e^{\frac {\hbox{$28.0769$}} {\hbox{$\eta$}}
+                            }
+                        }
+                        { e^{\frac {\hbox{$26.9231$}} {\hbox{$\eta$}}
+                            }
+                        }
+           \]
+          </div>
+          <div style="width: 300px;">
+            \[
+              \ln 2 = \ln{ \left( \frac {28.0769} {\eta} \right)
+                         }
+                      -
+                      \ln{ \left( \frac {26.9231} {\eta} \right)
+                         }
+            \]
+          </div>
+          from which
+          <div style="width: 300px;">
+            \[
+              \eta = \frac {28.0769 - 26.9231} {\ln 2} = 1.6646
+            \]
+          </div>
+          So, the slogan is: <b>Use simplified diode current formula whenever possible!</b><br>
+
+        </div> <!-- solution panel content -->
+      </div> <!-- solution panel block -->
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+          <li class="current"><a href="00toc.html">Contents</a></li>
+          <li class="next"><a href="Prob010104.html">P 1.1.4 <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main block jumbotron -->
+  </div>
+  <!-- class container -->
+</body>
+</html>

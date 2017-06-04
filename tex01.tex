@@ -1,0 +1,38 @@
+\documentclass [a4paper] {article}
+\begin{document}
+What's this?\\
+\LaTeX\ is fun.\\
+Sch\"on b\^et\'e
+\[
+  \int^S = \mathop{\vphantom{\int}}\nolimits^S
+\]
+\[
+  \int\limits^S = \mathop{\vphantom{\int}}^S
+\]
+
+\begin{tabular}{clc}
+  \multicolumn{3}{c}{Relations} \\[5pt]
+  \LaTeX & Typeset & width \\ \hline
+  \verb|$x=x$| & $x=x$ & \setbox0=\hbox{$x=x$} \the\wd0 \\
+  \verb|$x\mathbin{=}x$| & $x\mathbin{=}x$ & \setbox0=\hbox{$x\mathbin{=}x$} \the\wd0 \\
+  \verb|$x\mathrel{=}x$| & $x\mathrel{=}x$ & \setbox0=\hbox{$x\mathrel{=}x$} \the\wd0 \\
+  \verb|$x\mathord{=}x$| & $x\mathord{=}x$ & \setbox0=\hbox{$x\mathord{=}x$} \the\wd0 \\
+  \verb|$x\mathop{=}x$| & $x\mathop{=}x$ & \setbox0=\hbox{$x\mathop{=}x$} \the\wd0 \\[10pt]
+
+  \multicolumn{3}{c}{Binary operators} \\[5pt]
+  \LaTeX & Typeset & width \\ \hline
+  \verb|$x+x$| & $x+x$ & \setbox0=\hbox{$x+x$} \the\wd0 \\
+  \verb|$x\mathbin{+}x$| & $x\mathbin{+}x$ & \setbox0=\hbox{$x\mathbin{+}x$} \the\wd0 \\
+  \verb|$x\mathrel{+}x$| & $x\mathrel{+}x$ & \setbox0=\hbox{$x\mathrel{+}x$} \the\wd0 \\[10pt]
+
+  \multicolumn{3}{c}{Spaces bilatt} \\[5pt]
+  \LaTeX & Typeset & width \\ \hline
+  Ordinal: \ \verb|$x^2\ /2$| & $x^2\ /2$ & \setbox0=\hbox{$x^2\ /2$} \the\wd0 \\
+  Thin: \ \verb|$x^2\, /2$| & $x^2\, /2$ & \setbox0=\hbox{$x^2\, /2$} \the\wd0 \\
+  Medium: \ \verb|$x^2\> /2$| & $x^2\> /2$ & \setbox0=\hbox{$x^2\> /2$} \the\wd0 \\
+  Big: \ \verb|$x^2\; /2$| & $x^2\; /2$ & \setbox0=\hbox{$x^2\; /2$} \the\wd0 \\
+  Ordinal: \ \verb|$x^2\ /2$| & $x^2\ /2$ & \setbox0=\hbox{$x^2\ /2$} \the\wd0 \\
+  Small: \ \verb|$x^2\! /2$| & $x^2\! /2$ & \setbox0=\hbox{$x^2\! /2$} \the\wd0 \\
+\end{tabular}
+
+\end{document}
