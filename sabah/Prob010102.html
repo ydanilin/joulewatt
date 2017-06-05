@@ -130,8 +130,25 @@
               \eta = \frac {28.0769 - 26.9231} {\ln 2} = 1.6646
             \]
           </div>
-          So, the slogan is: <b>Use simplified diode current formula whenever possible!</b><br>
-
+          So, the slogan is: <b>Use simplified diode current formula whenever possible!</b><br><br>
+          Now let's see how to calculate incremental diode resistance.<br>
+          According to Ohm:
+          <div>
+            \[
+              dr = \frac {dv}{di} = \frac {1}{\raise0.7ex \hbox{$di$} \! / \!
+                                              \lower0.7ex \hbox{$dv$}}
+            \]
+          </div>
+          Let's find the derivative of the Main Diode Formula (let's temporary
+           name exponential part as \(\varepsilon(v)\)):
+          <div>
+            \[
+              \frac {d}{dv} \left[ I_S(\varepsilon(v)+1) \right] =
+              \frac {d}{dv} (I_S)(\varepsilon(v)+1) + I_S \frac {d}{dv} (\varepsilon(v)+1)
+            \]
+          </div>
+          First part is zero (derivative from a constant), the second one, due
+           to \((e^u)'=e^u \cdot u'\) becomes:
         </div> <!-- solution panel content -->
       </div> <!-- solution panel block -->
       <nav aria-label="...">
