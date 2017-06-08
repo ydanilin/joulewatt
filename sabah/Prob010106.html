@@ -11,7 +11,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- MathJax -->
-  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/1.1a/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/1.1a/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 </head>
 
 <body style="padding-top: 70px;">
@@ -34,7 +34,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Electronics Woodpecker <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Sabah book problems</a></li>
+                <li><a href="00toc.html">Sabah book problems</a></li>
                 <li><a href="#">OpAmps</a></li>
               </ul>
             </li>
@@ -58,29 +58,57 @@
       <!-- /.container-fluid -->
     </nav>
     <div class="jumbotron">
-      <h3>Nassir H. Sabah: Electronics: Basic, Analog, and Digital with PSpice<br>
-        <small>
-      Searched for a book about diodes and transistors, preferably with PSpice exercises and found pretty good one!<br>
-      Here I will publish selected problems from the book, trying to highlight the essence</small>
-    </h3>
+      <h2>Problem 1.1.6.</h2>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Problem listing:</h3>
+          <h3 class="panel-title">Problem text:</h3>
         </div>
         <div class="panel-body">
-          <ul class="list-unstyled">
-            <li>Chapter 1. Basic Diode Circuits</li>
-            <ul>
-              <li><a href="Prob010102.html">P 1.1.2</a></li>
-              <li><a href="Prob010104.html">P 1.1.4</a></li>
-              <li><a href="Prob010105.html">P 1.1.5</a></li>
-              <li><a href="Prob010106.html">P 1.1.6</a></li>
-            </ul>
-          </ul>
-
+          Two <i>pn</i> junction diodes are connected in inverse parallel to protect
+          the differential inputs of an op amp. If the diodes have
+          <i>I<sub>S</sub></i> = 0.1 nA and the differential input does not
+          exceed &plusmn;1 mV in normal operation, what is the minimum effective
+          incremental resistance of the two diodes? <i>&eta;</i> = 2.
         </div>
       </div>
 
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Solution:</h3>
+        </div>
+        <div class="panel-body">
+          This problem is a workout for reverse voltages part. See how the graph
+           of the Main Diode Formula behaves at negative voltages: the current
+           (absolute value) raises until, from some voltage value, it becomes
+           &minus;<i>I<sub>S</sub></i>.
+           <div>
+             <object id="svg1" data="../static/svg/01_01_06_neg_graph.svg" type="image/svg+xml"></object>
+           </div>
+           The voltage from the problem conditions is rather small and, if two
+           diodes connected in inverse parallel, we must take into account the
+           current in <b>both</b> diodes. Thus, we calculate differential
+           resistance at 0.1 mV for forward and backward diode and than do
+           \( \frac {r_1r_2}{r_1+r_2} \).<br>
+           Now all we need to do is to use the differential resistance formula
+           from <a href="Prob010102.html">P 1.1.2</a> (<b>including <i>I<sub>S</sub></i> !</b>)
+           and calculate the values:<br>
+           <i>r<sub>forward</sub></i> = 5.1 &times; 10<sup>8</sup>;
+           <i>r<sub>backward</sub></i> = 5.3 &times; 10<sup>8</sup> and
+           <b><i>r<sub>total</sub></i> = 2.6 &times; 10<sup>8</sup></b>
+        </div> <!-- solution panel content -->
+      </div>
+      <!-- solution panel block -->
+      <nav aria-label="...">
+        <ul class="pager">
+          <li class="previous"><a href="Prob010105.html"><span aria-hidden="true">&larr;</span> P 1.1.5</a></li>
+          <li class="current"><a href="00toc.html">Contents</a></li>
+          <li class="next disabled"><a href="#">P 1.1.8 <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main block jumbotron -->
+  </div>
+  <!-- class container -->
 </body>
 
 </html>
