@@ -1,0 +1,53 @@
+
+
+
+To build this site, I used Bootstrap.
+Bootstrap renders elements by assigning class names to them.
+To connect Bootstrap, do this:
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;!-- Latest compiled and minified CSS --&gt;
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+  &lt;!-- jQuery library --&gt;
+  &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;!-- Latest compiled JavaScript --&gt;
+  &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+
+
+
+
+
+To include HTML fragments elsewhere (common elements like navbar, footer etc), we can use jQuery the following way:
+
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="jquery.js"&gt;&lt;/script&gt;
+        &lt;script&gt;
+            $(function(){
+                $("#includedContent").load("b.html");
+            });
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div id="includedContent"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+b.html:
+&lt;p&gt; This is my include file with HTML fragments &lt;/p&gt;
+
+Important! This approach does not work when viewing html files locally due to
+"Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https."
+What we need is to run simple local webserver and good solution is Python:
+1. Start cmd (good choice for Windows is conemu64) and cd to the project root folder.
+2. Type python -m SimpleHTTPServer for Python 2 or python -m http.server for Python 3. The server listens to localhost port 8000.
+3. In browser, go to http://localhost:8000/ If your main file is index.html, it loads by default.
+
+
+https://bootsnipp.com/snippets/mvo9O
+Code monokai
+https://bootsnipp.com/snippets/2eB71
+

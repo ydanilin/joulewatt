@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- MathJax -->
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/1.1a/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>-->
+  <script>
+    $(function () {
+      $("#mynavbar").load("../navbar.html");
+    });
+  </script>
+</head>
+
+<body style="padding-top: 70px;">
+  <div class="container">
+    <!-- navbar include -->
+    <div id="mynavbar"></div>
+    <div class="jumbotron">
+      <h3>How to include HTML fragments elsewhere without CMS</h3>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Solution using jQuery</h3>
+        </div>
+        <div class="panel-body">
+          <div>Suppose you want to include the same navigation bar or footer on several webpages. Usual solution is to use CMS
+            like Django with their template engine. What if we need simpler solution?</div>
+          <div>The simple fragment below shows how to embed another html file using jQuery</div>
+          <pre>
+          <code>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script&gt;
+      $(function(){
+        $("#includedContent").load("b.html");
+      });
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="includedContent"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+b.html:
+&lt;p&gt; This is my include file with HTML fragments &lt;/p&gt;
+          </code>
+          </pre>
+          <div class="row" style="margin-top: 10px">
+              <div class="col-md-1">
+                  <b>Important!</b>
+              </div>
+              <div class="col-md-11"><div>This approach does not work when viewing html files locally due to <code class="highlighter-rouge">Cross origin requests are only
+                  supported for protocol schemes: http, data, chrome, chrome-extension, https</code>.</div>
+                  <div>What we need is to run simple local webserver and good solution is in Python:</div>
+                  <ul class="list-unstyled">
+                  <li>
+                    1. Start cmd (good choice for Windows is conemu64) and cd to the
+                  project root folder.</li>
+                  <li>
+                    2. Type <code>python -m SimpleHTTPServer</code> for Python 2 or <code>python -m http.server</code> for Python 3.
+                  The server listens to localhost port 8000.</li>
+                  <li>
+                    3. In browser, go to http://localhost:8000/ If your main file is
+                  index.html, it loads by default.</li>
+                  </ul>
+              </div>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
