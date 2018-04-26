@@ -23,6 +23,7 @@
   <div class="container">
     <!-- navbar include -->
     <div id="mynavbar"></div>
+    
     <div class="jumbotron">
       <h3>How to include HTML fragments elsewhere without CMS</h3>
       <div class="panel panel-default">
@@ -53,25 +54,30 @@ b.html:
           </code>
           </pre>
           <div class="row" style="margin-top: 10px">
-              <div class="col-md-1">
-                  <b>Important!</b>
-              </div>
-              <div class="col-md-11"><div>This approach does not work when viewing html files locally due to <code class="highlighter-rouge">Cross origin requests are only
+            <div class="col-md-1">
+              <b>Important!</b>
+            </div>
+            <div class="col-md-11">
+              <div>This approach does not work when viewing html files locally due to
+                <code class="highlighter-rouge">Cross origin requests are only
                   supported for protocol schemes: http, data, chrome, chrome-extension, https</code>.</div>
-                  <div>What we need is to run simple local webserver and good solution is in Python:</div>
-                  <ul class="list-unstyled">
-                  <li>
-                    1. Start cmd (good choice for Windows is conemu64) and cd to the
-                  project root folder.</li>
-                  <li>
-                    2. Type <code>python -m SimpleHTTPServer</code> for Python 2 or <code>python -m http.server</code> for Python 3.
-                  The server listens to localhost port 8000.</li>
-                  <li>
-                    3. In browser, go to http://localhost:8000/ If your main file is
-                  index.html, it loads by default.</li>
-                  </ul>
-              </div>
-             
+              <div>What we need is to run simple local webserver and good solution is in Python:</div>
+              <ul class="list-unstyled">
+                <li>
+                  1. Start cmd (good choice for Windows is conemu64) and
+                  <code>cd</code> to the
+                  <b>folder above project root folder</b>.</li>
+                <li>
+                  2. Type
+                  <code>python -m SimpleHTTPServer</code> for Python 2 or
+                  <code>python -m http.server</code> for Python 3. The server listens to localhost port 8000.</li>
+                <li>
+                  3. In browser, go to http://localhost:8000/joulewatt
+                  <br> If your main file is index.html, it loads by default.</li>
+              </ul>
+              <div style="margin-top: 10px">Provide absolute paths like <b>/joulewatt/folder/folder/file.html</b> in links.</div>
+            </div>
+
           </div>
         </div>
       </div>
