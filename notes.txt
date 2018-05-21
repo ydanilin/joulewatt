@@ -51,3 +51,4 @@ https://bootsnipp.com/snippets/mvo9O
 Code monokai
 https://bootsnipp.com/snippets/2eB71
 
+https://stackoverflow.com/questions/168963/stop-jquery-load-response-from-being-cached

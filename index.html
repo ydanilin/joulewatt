@@ -11,6 +11,12 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
+    $.ajaxSetup ({
+    // Disable caching of AJAX responses
+      cache: false
+    });
+  </script>
+  <script>
       $(function(){
           $("#mynavbar").load("./navbar.html");
       });
