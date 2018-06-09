@@ -1,0 +1,85 @@
+
+1. Create a separate directory for all virtual machines stuff (do not shit into User folder)
+
+2. Create the following bat to point guys to this new directory:
+ECHO OFF
+REM VirtualBox home directory.
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" setproperty machinefolder "C:\tp\docs\vm"
+REM Vagrant home directory for downloadad boxes.
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v VAGRANT_HOME /t REG_SZ /d "C:\tp\docs\vm\vagrant.d"
+ECHO Re-login for changes to take effect
+
+3. Re-login for changes to take effect
+
+4. Issue vagrant add box:
+vagrant box add --name FIRST /tp/docs/vm/vagrant.d/boxes/xenial-server-cloudimg-i386-vagrant.box
+vagrant box add --name Splash /tp/docs/vm/zesty32_1704_splash.box
+
+vagrant reload > vagrlog.txt 2>&1
+sudo ufw disable
+
+https://vagrantcloud.com/wholebits/boxes/ubuntu17.04-32/versions/2017.08.30/providers/virtualbox.box
+
+https://packages.ubuntu.com/
+
+***** SERVER STEPS *********************
+sudo apt-get update
+sudo apt-get install tree
+sudo ./splash-setup.sh
+
+***************************************
+
+cd /usr/bin
+python3 -m splash.server -v0 --disable-private-mode
+TODO: --filters-path=FILTERS_PATH
+
+
+
+https://stackoverflow.com/questions/34271982/install-python3-venv-module-on-linux-mint/34272200#34272200
+https://askubuntu.com/questions/751204/where-is-pyvenv
+
+https://www.lifewire.com/ultimate-windows-7-ubuntu-linux-dual-boot-guide-2200653
+
+pip install scrapy-splash
+
+
+***********************************************
+vagrant box add --name HEXLET /tp/docs/vm/xenial-server-cloudimg-amd64-vagrant.box
+https://jmfeurprier.com/2015/10/02/how-to-install-node-js-with-ubuntu-and-vagrant-in-a-synced-folder/
+
+curl -sL https://deb.nodesource.com/setup_8.x | sudo sh
+sudo apt-get install -y nodejs
+
+
+https://stackoverflow.com/questions/17895256/creating-symbolic-link-protocol-error
+
+VBoxManage setextradata project2_default_1525330045792_18778 VBoxInternal2/SharedFoldersEnableSymlinksCreate/var_www_project 1
+https://github.com/ydanilin/project-lvl1-s236/blob/master/package.json
+
+If vagrant lose machine and created another one:
+https://github.com/hashicorp/vagrant/issues/1755
+
+Rewrite ssh keys: https://gist.github.com/benlk/d0cf2b3251e6c09758f36ccd14d6894e
+
+****************************************************
+later on you can fix an ip with:
+config.vm.network "public_network", ip: "192.168.7.57"
+
+
+****************************************************
+if loose virtual machine:
+1. Delete new macine at C:\tp\docs\vm
+2. "c:\Program Files\Oracle\VirtualBox\VBoxManage" list vms
+3. Find the id of machine needed
+4. ./vagrant/machines/dev/virtualbox/id and updated the id
+5. Now do vagrant up to the machine
+
+
+to remove invalid VirtualBox entries, do:
+"c:\Program Files\Oracle\VirtualBox\VBoxManage" unregistervm <id>
+to ping to machine you can use
+python -m SimpleHTTPServer
+
+**********************************************************
+debugging in Vagrant machines:
+node --inspect-brk=0.0.0.0:9229 <file in dist folder> <script args>
