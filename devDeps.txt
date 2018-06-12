@@ -1,0 +1,72 @@
+babel-cli babel-core babel-eslint babel-jest babel-plugin-transform-runtime babel-preset-env babel-preset-stage-0 eslint eslint-config-airbnb-base eslint-plugin-babel eslint-plugin-import eslint-plugin-jest jest jest-cli nock
+
+.babelrc
+.eslintignore
+.eslintrc.yml
+.gitignore
+.npmignore (empty)
+.travis.yml (need to do make lint; make test)
+Makefile
+
+Codeclimate bages:
+https://codeclimate.com/github/codeclimate/codeclimate/badges
+
+https://github.com/ydanilin/project-lvl3-s262.git
+pageloader-dan-hexlet
+Downloads all resources of a specified page
+
+lsblk -o COLUMN1,COLUMN2,COLUMN3
+
+# lib bin defined in package.json as "pdl": "dist/bin/page-downloader.js"
+sudo npm link
+pdl
+# download "small" file like www.ya.ru
+pdl https://ya.ru/
+cat www-ya-ru.html
+# it works. now how to remove:
+sudo npm rm --global pageloader-dan-hexlet
+# should be no pdl program anymore
+pdl
+
+sudo apt-add-repository ppa:zanchey/asciinema
+sudo apt-get update
+sudo apt-get install asciinema
+
+asciinema auth
+proceed with link
+
+asciinema rec project3_step1.cast
+asciinema upload <filename>
+
+Nado:
+*******************
+find tags (filter outside links)
+transform short links to long links
+resolve pathnames
+change html
+save html
+mkdir for assets
+save assets
+
+Sejchass:
+*******************
+launcher.js calls fetchAndSave (in Listr task)
+fetchAndSave downloads html and saves it:
+download
+save
+
+
+U Vishnu:
+index.js
+------------
+loadData - downloads html
+getSources(html) - returns modified $.html() and sources list
+writeFile() - writes html and return sources list
+
+cli.js
+------------
+call index.js - saves html and returns list of sources
+then listr task for every sources
+loadData - download every asset
+writeFile() - saves every asset
+
