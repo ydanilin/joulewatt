@@ -17,25 +17,40 @@ Downloads all resources of a specified page
 
 lsblk -o COLUMN1,COLUMN2,COLUMN3
 
-# lib bin defined in package.json as "pdl": "dist/bin/page-downloader.js"
+# bin defined in package.json as "pdl": "dist/bin/page-downloader.js"
 sudo npm link
 pdl
-# download "small" file like www.ya.ru
-pdl https://ya.ru/
+# download "small" site like google.com
+pdl https://www.google.com/
+cd www...
+ls
+# files are there
+cd ..
+cat www-google-com.html | grep '<link href='
+# red <link> points to local file
+
+
 cat www-ya-ru.html
 # it works. now how to remove:
 sudo npm rm --global pageloader-dan-hexlet
 # should be no pdl program anymore
 pdl
 
+https://asciinema.org/a/EyOiZ63wVEe8PHuo8jr0W3i9o?speed=2
+
+*****************************************************************
+asciinema
+*****************************************************************
 sudo apt-add-repository ppa:zanchey/asciinema
 sudo apt-get update
 sudo apt-get install asciinema
 
+login email with password to email (username ydanilin)
+
 asciinema auth
 proceed with link
 
-asciinema rec project3_step1.cast
+asciinema rec project3_step2.cast
 asciinema upload <filename>
 
 Nado:
