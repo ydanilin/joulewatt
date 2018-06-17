@@ -53,35 +53,3 @@ proceed with link
 asciinema rec project3_step2.cast
 asciinema upload <filename>
 
-Nado:
-*******************
-find tags (filter outside links)
-transform short links to long links
-resolve pathnames
-change html
-save html
-mkdir for assets
-save assets
-
-Sejchass:
-*******************
-launcher.js calls fetchAndSave (in Listr task)
-fetchAndSave downloads html and saves it:
-download
-save
-
-
-U Vishnu:
-index.js
-------------
-loadData - downloads html
-getSources(html) - returns modified $.html() and sources list
-writeFile() - writes html and return sources list
-
-cli.js
-------------
-call index.js - saves html and returns list of sources
-then listr task for every sources
-loadData - download every asset
-writeFile() - saves every asset
-
