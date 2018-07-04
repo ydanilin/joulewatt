@@ -49,6 +49,11 @@ https://jmfeurprier.com/2015/10/02/how-to-install-node-js-with-ubuntu-and-vagran
 
 curl -sL https://deb.nodesource.com/setup_8.x | sudo sh
 sudo apt-get install -y nodejs
+mkdir /home/vagrant/node_modules
+cd /var/www/project
+ln -s /home/vagrant/node_modules/ node_modules
+
+
 
 
 https://stackoverflow.com/questions/17895256/creating-symbolic-link-protocol-error
