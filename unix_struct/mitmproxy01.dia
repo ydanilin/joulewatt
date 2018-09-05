@@ -2,10 +2,10 @@
 <dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
   <dia:diagramdata>
     <dia:attribute name="background">
-      <dia:color val="#ffffff"/>
+      <dia:color val="#ffffffff"/>
     </dia:attribute>
     <dia:attribute name="pagebreak">
-      <dia:color val="#000099"/>
+      <dia:color val="#000099ff"/>
     </dia:attribute>
     <dia:attribute name="paper">
       <dia:composite type="paper">
@@ -37,6 +37,9 @@
     </dia:attribute>
     <dia:attribute name="grid">
       <dia:composite type="grid">
+        <dia:attribute name="dynamic">
+          <dia:boolean val="true"/>
+        </dia:attribute>
         <dia:attribute name="width_x">
           <dia:real val="1"/>
         </dia:attribute>
@@ -53,7 +56,7 @@
       </dia:composite>
     </dia:attribute>
     <dia:attribute name="color">
-      <dia:color val="#d8e5e5"/>
+      <dia:color val="#d8e5e5ff"/>
     </dia:attribute>
     <dia:attribute name="guides">
       <dia:composite type="guides">
@@ -61,14 +64,33 @@
         <dia:attribute name="vguides"/>
       </dia:composite>
     </dia:attribute>
+    <dia:attribute name="display">
+      <dia:composite type="display">
+        <dia:attribute name="antialiased">
+          <dia:boolean val="false"/>
+        </dia:attribute>
+        <dia:attribute name="snap-to-grid">
+          <dia:boolean val="false"/>
+        </dia:attribute>
+        <dia:attribute name="snap-to-object">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="show-grid">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+        <dia:attribute name="show-connection-points">
+          <dia:boolean val="true"/>
+        </dia:attribute>
+      </dia:composite>
+    </dia:attribute>
   </dia:diagramdata>
-  <dia:layer name="Ramen" visible="true">
+  <dia:layer name="Ramen" visible="true" connectable="true">
     <dia:object type="Standard - Text" version="1" id="O0">
       <dia:attribute name="obj_pos">
         <dia:point val="1.99666,11.6175"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="1.99666,10.9775;1.99666,11.75"/>
+        <dia:rectangle val="1.99666,11.0225;1.99666,11.77"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -85,7 +107,7 @@
             <dia:point val="1.99666,11.6175"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -101,7 +123,7 @@
         <dia:point val="2.37756,11.4906"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.37756,10.8506;2.37756,11.6231"/>
+        <dia:rectangle val="2.37756,10.8956;2.37756,11.6431"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -118,7 +140,7 @@
             <dia:point val="2.37756,11.4906"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -128,133 +150,15 @@
       <dia:attribute name="valign">
         <dia:enum val="3"/>
       </dia:attribute>
-    </dia:object>
-    <dia:object type="Standard - Box" version="0" id="O2">
-      <dia:attribute name="obj_pos">
-        <dia:point val="0.8,56.3"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="0.78,56.28;5.82,56.92"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="0.8,56.3"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="5"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="0.60000000000000009"/>
-      </dia:attribute>
-      <dia:attribute name="border_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O3">
-      <dia:attribute name="obj_pos">
-        <dia:point val="0.8,56.6"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="0.8,56.2825;1.9475,56.685"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#Cgroups#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="IBM Plex Sans" style="0" name="Courier"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.38805555781714707"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="0.8,56.6"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="0"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="valign">
-        <dia:enum val="3"/>
-      </dia:attribute>
-      <dia:connections>
-        <dia:connection handle="0" to="O2" connection="3"/>
-      </dia:connections>
-    </dia:object>
-    <dia:object type="Standard - Box" version="0" id="O4">
-      <dia:attribute name="obj_pos">
-        <dia:point val="1,84.5"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="0.98,84.48;6.02,85.12"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="1,84.5"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="5"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="0.60000000000000009"/>
-      </dia:attribute>
-      <dia:attribute name="border_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O5">
-      <dia:attribute name="obj_pos">
-        <dia:point val="1,84.8"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="1,84.4825;2.63,84.885"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#I HUJ tozhe#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="IBM Plex Sans" style="0" name="Courier"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.38805555781714707"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="1,84.8"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="0"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="valign">
-        <dia:enum val="3"/>
-      </dia:attribute>
-      <dia:connections>
-        <dia:connection handle="0" to="O4" connection="3"/>
-      </dia:connections>
     </dia:object>
   </dia:layer>
-  <dia:layer name="Background" visible="true" active="true">
-    <dia:object type="Standard - Text" version="1" id="O6">
+  <dia:layer name="Background" visible="true" connectable="true" active="true">
+    <dia:object type="Standard - Text" version="1" id="O2">
       <dia:attribute name="obj_pos">
         <dia:point val="3.95833,2.675"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="3.95833,2.035;3.95833,2.8075"/>
+        <dia:rectangle val="3.95833,2.08;3.95833,2.8275"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -271,7 +175,7 @@
             <dia:point val="3.95833,2.675"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -282,12 +186,12 @@
         <dia:enum val="3"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O7">
+    <dia:object type="Standard - Text" version="1" id="O3">
       <dia:attribute name="obj_pos">
         <dia:point val="14.6108,2.69029"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="14.6108,2.05029;14.6108,2.82279"/>
+        <dia:rectangle val="14.6108,2.09529;14.6108,2.84279"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -304,7 +208,7 @@
             <dia:point val="14.6108,2.69029"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -315,12 +219,12 @@
         <dia:enum val="3"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O8">
+    <dia:object type="Standard - Text" version="1" id="O4">
       <dia:attribute name="obj_pos">
         <dia:point val="12.1093,23.6447"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="12.1093,23.3347;12.1093,23.7097"/>
+        <dia:rectangle val="12.1093,23.3547;12.1093,23.7197"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -337,7 +241,7 @@
             <dia:point val="12.1093,23.6447"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -348,12 +252,12 @@
         <dia:enum val="3"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O9">
+    <dia:object type="Standard - Text" version="1" id="O5">
       <dia:attribute name="obj_pos">
         <dia:point val="11.2,13"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.2,12.69;11.2,13.065"/>
+        <dia:rectangle val="11.2,12.71;11.2,13.075"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -370,7 +274,7 @@
             <dia:point val="11.2,13"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -381,7 +285,7 @@
         <dia:enum val="3"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - LargePackage" version="0" id="O10">
+    <dia:object type="UML - LargePackage" version="0" id="O6">
       <dia:attribute name="obj_pos">
         <dia:point val="0.1,2"/>
       </dia:attribute>
@@ -400,31 +304,37 @@
       <dia:attribute name="elem_height">
         <dia:real val="1.2105109833466536"/>
       </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="text_colour">
-        <dia:color val="#000000"/>
+      <dia:attribute name="name">
+        <dia:string>#mitmproxy/net/#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
       </dia:attribute>
-      <dia:attribute name="name">
-        <dia:string>#mitmproxy/net/#</dia:string>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O11">
+    <dia:object type="UML - SmallPackage" version="0" id="O7">
       <dia:attribute name="obj_pos">
         <dia:point val="1.68226,10.1461"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="1.63226,9.1961;7.22976,12.3483"/>
+        <dia:rectangle val="1.65726,9.2211;7.19726,12.3233"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -433,19 +343,10 @@
         <dia:point val="1.68226,10.1461"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="5.4974999999999996"/>
+        <dia:real val="5.4899999999999993"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="2.1522222312685884"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -465,18 +366,27 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="1.98226,10.7411"/>
+            <dia:point val="1.98226,10.6811"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - LargePackage" version="0" id="O12">
+    <dia:object type="UML - LargePackage" version="0" id="O8">
       <dia:attribute name="obj_pos">
         <dia:point val="1,5"/>
       </dia:attribute>
@@ -495,26 +405,32 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
       <dia:attribute name="elem_height">
         <dia:real val="3"/>
       </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="text_colour">
-        <dia:color val="#000000"/>
+      <dia:attribute name="name">
+        <dia:string>#http#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
       </dia:attribute>
-      <dia:attribute name="name">
-        <dia:string>#http#</dia:string>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - LargePackage" version="0" id="O13">
+    <dia:object type="UML - LargePackage" version="0" id="O9">
       <dia:attribute name="obj_pos">
         <dia:point val="11,5"/>
       </dia:attribute>
@@ -533,31 +449,37 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
       <dia:attribute name="elem_height">
         <dia:real val="3"/>
       </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="text_colour">
-        <dia:color val="#000000"/>
+      <dia:attribute name="name">
+        <dia:string>#websockets#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
       </dia:attribute>
-      <dia:attribute name="name">
-        <dia:string>#websockets#</dia:string>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O14">
+    <dia:object type="UML - SmallPackage" version="0" id="O10">
       <dia:attribute name="obj_pos">
         <dia:point val="11.6959,10.1688"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.6459,9.2188;17.0009,12.371"/>
+        <dia:rectangle val="11.6709,9.2438;16.9759,12.346"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -570,15 +492,6 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="2.1522222312685884"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -598,23 +511,32 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="11.9959,10.7638"/>
+            <dia:point val="11.9959,10.7038"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O15">
+    <dia:object type="UML - SmallPackage" version="0" id="O11">
       <dia:attribute name="obj_pos">
         <dia:point val="1.68226,15.3191"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="1.63226,14.3691;7.48476,18.6855"/>
+        <dia:rectangle val="1.65726,14.3941;7.44226,18.6605"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -623,19 +545,10 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
         <dia:point val="1.68226,15.3191"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="5.7524999999999995"/>
+        <dia:real val="5.7349999999999994"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="3.3163889047200295"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -658,23 +571,32 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="1.98226,15.9141"/>
+            <dia:point val="1.98226,15.8541"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O16">
+    <dia:object type="UML - SmallPackage" version="0" id="O12">
       <dia:attribute name="obj_pos">
         <dia:point val="11.5159,14.2336"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.4659,13.2836;17.0009,21.0925"/>
+        <dia:rectangle val="11.4909,13.3086;16.9784,21.0675"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -683,19 +605,10 @@ DNS hostname or an IPv4/IPv6 address#</dia:string>
         <dia:point val="11.5159,14.2336"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="5.4349999999999996"/>
+        <dia:real val="5.4375"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="6.8088889250743527"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -727,23 +640,32 @@ without emitting a RST#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="11.8159,14.8286"/>
+            <dia:point val="11.8159,14.7686"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O17">
+    <dia:object type="UML - SmallPackage" version="0" id="O13">
       <dia:attribute name="obj_pos">
         <dia:point val="1.68226,21.7323"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="1.63226,20.7823;6.98726,26.6509"/>
+        <dia:rectangle val="1.65726,20.8073;6.96226,26.6259"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -756,15 +678,6 @@ without emitting a RST#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="4.8686111359886173"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -791,23 +704,32 @@ without emitting a RST#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="1.98226,22.3273"/>
+            <dia:point val="1.98226,22.2673"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O18">
+    <dia:object type="UML - SmallPackage" version="0" id="O14">
       <dia:attribute name="obj_pos">
         <dia:point val="11.6959,22.8965"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.6459,21.9465;17.0009,26.6509"/>
+        <dia:rectangle val="11.6709,21.9715;16.9759,26.6259"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -820,15 +742,6 @@ without emitting a RST#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="3.7044444625371766"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -852,23 +765,32 @@ without emitting a RST#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="11.9959,23.4915"/>
+            <dia:point val="11.9959,23.4315"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O19">
+    <dia:object type="Standard - Text" version="1" id="O15">
       <dia:attribute name="obj_pos">
         <dia:point val="6.28583,30.36"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.28583,29.72;6.28583,30.4925"/>
+        <dia:rectangle val="6.28583,29.765;6.28583,30.5125"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -885,7 +807,7 @@ without emitting a RST#</dia:string>
             <dia:point val="6.28583,30.36"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -896,12 +818,12 @@ without emitting a RST#</dia:string>
         <dia:enum val="3"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O20">
+    <dia:object type="Standard - Text" version="1" id="O16">
       <dia:attribute name="obj_pos">
         <dia:point val="16.9383,30.3753"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="16.9383,29.7353;16.9383,30.5078"/>
+        <dia:rectangle val="16.9383,29.7803;16.9383,30.5278"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -918,7 +840,7 @@ without emitting a RST#</dia:string>
             <dia:point val="16.9383,30.3753"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
@@ -929,7 +851,7 @@ without emitting a RST#</dia:string>
         <dia:enum val="3"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - LargePackage" version="0" id="O21">
+    <dia:object type="UML - LargePackage" version="0" id="O17">
       <dia:attribute name="obj_pos">
         <dia:point val="0.1,29.685"/>
       </dia:attribute>
@@ -948,26 +870,32 @@ without emitting a RST#</dia:string>
       <dia:attribute name="elem_height">
         <dia:real val="1.2105109833466536"/>
       </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="text_colour">
-        <dia:color val="#000000"/>
+      <dia:attribute name="name">
+        <dia:string>#mitmproxy/net/http/#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
       </dia:attribute>
-      <dia:attribute name="name">
-        <dia:string>#mitmproxy/net/http/#</dia:string>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - LargePackage" version="0" id="O22">
+    <dia:object type="UML - LargePackage" version="0" id="O18">
       <dia:attribute name="obj_pos">
         <dia:point val="0.5,32.4"/>
       </dia:attribute>
@@ -986,26 +914,32 @@ without emitting a RST#</dia:string>
       <dia:attribute name="elem_height">
         <dia:real val="3"/>
       </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="text_colour">
-        <dia:color val="#000000"/>
+      <dia:attribute name="name">
+        <dia:string>#http1#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
       </dia:attribute>
-      <dia:attribute name="name">
-        <dia:string>#http1#</dia:string>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - LargePackage" version="0" id="O23">
+    <dia:object type="UML - LargePackage" version="0" id="O19">
       <dia:attribute name="obj_pos">
         <dia:point val="11.5,32.4"/>
       </dia:attribute>
@@ -1024,31 +958,37 @@ without emitting a RST#</dia:string>
       <dia:attribute name="elem_height">
         <dia:real val="3"/>
       </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="text_colour">
-        <dia:color val="#000000"/>
+      <dia:attribute name="name">
+        <dia:string>#http2#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
       </dia:attribute>
-      <dia:attribute name="name">
-        <dia:string>#http2#</dia:string>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O24">
+    <dia:object type="UML - SmallPackage" version="0" id="O20">
       <dia:attribute name="obj_pos">
         <dia:point val="0.5,37.2673"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="0.45,36.3173;6.01,46.8426"/>
+        <dia:rectangle val="0.475,36.3423;5.9775,46.8176"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1057,19 +997,10 @@ without emitting a RST#</dia:string>
         <dia:point val="0.5,37.2673"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="5.46"/>
+        <dia:real val="5.4524999999999997"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="9.5252778297943816"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1108,23 +1039,32 @@ without emitting a RST#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="0.8,37.8623"/>
+            <dia:point val="0.8,37.8023"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O25">
+    <dia:object type="UML - SmallPackage" version="0" id="O21">
       <dia:attribute name="obj_pos">
         <dia:point val="6.975,37.2673"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.925,36.3173;12.28,41.7979"/>
+        <dia:rectangle val="6.95,36.3423;12.255,41.7729"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1137,15 +1077,6 @@ without emitting a RST#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="4.4805555781714705"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1171,23 +1102,32 @@ without emitting a RST#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="7.275,37.8623"/>
+            <dia:point val="7.275,37.8023"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O26">
+    <dia:object type="UML - SmallPackage" version="0" id="O22">
       <dia:attribute name="obj_pos">
         <dia:point val="13.245,37.2673"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.195,36.3173;18.55,41.0217"/>
+        <dia:rectangle val="13.22,36.3423;18.525,40.9967"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1200,15 +1140,6 @@ without emitting a RST#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="3.7044444625371766"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1232,23 +1163,32 @@ without emitting a RST#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="13.545,37.8623"/>
+            <dia:point val="13.545,37.8023"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O27">
+    <dia:object type="UML - SmallPackage" version="0" id="O23">
       <dia:attribute name="obj_pos">
         <dia:point val="2.66538,48.4149"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="2.61538,47.4649;8.93288,50.6171"/>
+        <dia:rectangle val="2.64038,47.4899;8.91288,50.5921"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1257,19 +1197,10 @@ without emitting a RST#</dia:string>
         <dia:point val="2.66538,48.4149"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="6.2174999999999994"/>
+        <dia:real val="6.2225000000000001"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="2.1522222312685884"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1289,23 +1220,32 @@ without emitting a RST#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="2.96538,49.0099"/>
+            <dia:point val="2.96538,48.9499"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O28">
+    <dia:object type="UML - SmallPackage" version="0" id="O24">
       <dia:attribute name="obj_pos">
         <dia:point val="6.62413,44.2523"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.57413,43.3023;12.6516,46.8426"/>
+        <dia:rectangle val="6.59913,43.3273;12.5866,46.8176"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1314,19 +1254,10 @@ without emitting a RST#</dia:string>
         <dia:point val="6.62413,44.2523"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="5.9774999999999991"/>
+        <dia:real val="5.9375"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="2.5402777890857355"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1347,23 +1278,32 @@ string and returns list of (key, value) tuples#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="6.92413,44.8473"/>
+            <dia:point val="6.92413,44.7873"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O29">
+    <dia:object type="UML - SmallPackage" version="0" id="O25">
       <dia:attribute name="obj_pos">
         <dia:point val="10.9079,48.4148"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="10.8579,47.4648;17.0704,50.6171"/>
+        <dia:rectangle val="10.8829,47.4898;17.0229,50.592"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1372,19 +1312,10 @@ string and returns list of (key, value) tuples#</dia:string>
         <dia:point val="10.9079,48.4148"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="6.1124999999999998"/>
+        <dia:real val="6.0899999999999999"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="2.1522222312685884"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1404,23 +1335,32 @@ string and returns list of (key, value) tuples#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="11.2079,49.0098"/>
+            <dia:point val="11.2079,48.9498"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O30">
+    <dia:object type="UML - SmallPackage" version="0" id="O26">
       <dia:attribute name="obj_pos">
         <dia:point val="0.5,52.223"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="0.45,51.273;6.8425,54.4252"/>
+        <dia:rectangle val="0.475,51.298;6.7975,54.4002"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1429,19 +1369,10 @@ string and returns list of (key, value) tuples#</dia:string>
         <dia:point val="0.5,52.223"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="6.2924999999999995"/>
+        <dia:real val="6.2725"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="2.1522222312685884"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1461,23 +1392,32 @@ string and returns list of (key, value) tuples#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="0.8,52.818"/>
+            <dia:point val="0.8,52.758"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O31">
+    <dia:object type="UML - SmallPackage" version="0" id="O27">
       <dia:attribute name="obj_pos">
         <dia:point val="13.245,52.611"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.195,51.661;18.55,54.4252"/>
+        <dia:rectangle val="13.22,51.686;18.525,54.4002"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1490,15 +1430,6 @@ string and returns list of (key, value) tuples#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="1.7641666734514412"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1517,23 +1448,32 @@ http response strings#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="13.545,53.206"/>
+            <dia:point val="13.545,53.146"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O32">
+    <dia:object type="UML - SmallPackage" version="0" id="O28">
       <dia:attribute name="obj_pos">
         <dia:point val="13.245,42.7001"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="13.195,41.7501;18.55,46.8426"/>
+        <dia:rectangle val="13.22,41.7751;18.525,46.8176"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1546,15 +1486,6 @@ http response strings#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="4.0925000203543238"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1579,23 +1510,32 @@ http response strings#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="13.545,43.2951"/>
+            <dia:point val="13.545,43.2351"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
       </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
     </dia:object>
-    <dia:object type="UML - SmallPackage" version="0" id="O33">
+    <dia:object type="UML - SmallPackage" version="0" id="O29">
       <dia:attribute name="obj_pos">
         <dia:point val="7.39125,52.611"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.34125,51.661;12.6962,54.4252"/>
+        <dia:rectangle val="7.36625,51.686;12.6712,54.4002"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1608,15 +1548,6 @@ http response strings#</dia:string>
       </dia:attribute>
       <dia:attribute name="elem_height">
         <dia:real val="1.7641666734514412"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.039999999105930328"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
@@ -1635,15 +1566,728 @@ collection of user agent strings#</dia:string>
             <dia:real val="0.38805555781714707"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="7.69125,53.206"/>
+            <dia:point val="7.69125,53.146"/>
           </dia:attribute>
           <dia:attribute name="color">
-            <dia:color val="#000000"/>
+            <dia:color val="#000000ff"/>
           </dia:attribute>
           <dia:attribute name="alignment">
             <dia:enum val="0"/>
           </dia:attribute>
         </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - LargePackage" version="0" id="O30">
+      <dia:attribute name="obj_pos">
+        <dia:point val="0.575,57.16"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="0.525,56.11;19.485,58.4205"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="0.575,57.16"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="18.859999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.2105109833466536"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#mitmproxy/net/http/http1#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - SmallPackage" version="0" id="O31">
+      <dia:attribute name="obj_pos">
+        <dia:point val="0.675,60.0405"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="0.65,59.1155;5.955,64.9341"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="0.675,60.0405"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="5.254999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="4.8686111359886173"/>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#assemble.py
+-------------------------------------------------
+- assemble_request()
+- assemble_request_head()
+- assemble_response()
+- assemble_response_head()
+- assemble_body()
+- _assemble_request_line()
+- _assemble_request_headers()
+- _assemble_response_line()
+- _assemble_response_headers()#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="Calibri" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.38805555781714707"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="0.975,60.5755"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - SmallPackage" version="0" id="O32">
+      <dia:attribute name="obj_pos">
+        <dia:point val="6.6125,59.9492"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="6.5875,59.0243;11.8925,67.1712"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="6.6125,59.9492"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="5.254999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="7.1969444828914995"/>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#read.py
+-------------------------------------------------
+- get_header_tokens()
+- read_request()
+- read_request_head()
+- read_response()
+- read_response_head()
+- read_body()
+- connection_close()
+- expected_http_body_size()
+- _get_first_line()
+- _read_request_line()
+- _parse_authority_form()
+- _read_response_line()
+- _check_http_version()
+- _read_headers()
+- _read_chunked()#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="Calibri" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.38805555781714707"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="6.9125,60.4842"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - SmallPackage" version="0" id="O33">
+      <dia:attribute name="obj_pos">
+        <dia:point val="0.8,71.605"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="0.775,70.68;6.08,73.7822"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="0.8,71.605"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="5.254999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="2.1522222312685884"/>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#framereader.py
+-------------------------------------------------
+- read_raw_frame()
+- parse_frame()#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="Calibri" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.38805555781714707"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="1.1,72.14"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - LargePackage" version="0" id="O34">
+      <dia:attribute name="obj_pos">
+        <dia:point val="0.575,69.0025"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="0.525,67.9525;19.485,70.263"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="0.575,69.0025"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="18.859999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.2105109833466536"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#mitmproxy/net/http/http2#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - SmallPackage" version="0" id="O35">
+      <dia:attribute name="obj_pos">
+        <dia:point val="7.525,71.5763"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="7.5,70.6512;12.805,73.3654"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="7.525,71.5763"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="5.254999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.7641666734514412"/>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#utils.py
+-------------------------------------------------
+- def parse_headers()#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="Calibri" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.38805555781714707"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="7.825,72.1112"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Standard - Text" version="1" id="O36">
+      <dia:attribute name="obj_pos">
+        <dia:point val="4.683,85.4426"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="4.66431,84.829;4.683,85.6325"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="sans" style="0" name="Helvetica"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.80000000000000004"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="4.683,85.4426"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="valign">
+        <dia:enum val="3"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Standard - Text" version="1" id="O37">
+      <dia:attribute name="obj_pos">
+        <dia:point val="15.3355,85.4579"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="15.3355,84.8629;15.3355,85.6104"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="sans" style="0" name="Helvetica"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.80000000000000004"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="15.3355,85.4579"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="valign">
+        <dia:enum val="3"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - LargePackage" version="0" id="O38">
+      <dia:attribute name="obj_pos">
+        <dia:point val="0.824667,84.7676"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="0.774667,83.7176;19.7347,86.0282"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="0.824667,84.7676"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="18.859999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.2105109833466536"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#mitmproxy/proxy/#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - SmallPackage" version="0" id="O39">
+      <dia:attribute name="obj_pos">
+        <dia:point val="2.40693,92.9137"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="2.38193,91.9887;7.68693,95.091"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="2.40693,92.9137"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="5.254999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="2.1522222312685884"/>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#config.py
+-------------------------------------------------
+- class HostMatcher
+- class ProxyConfig#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="Calibri" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.38805555781714707"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="2.70693,93.4487"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - LargePackage" version="0" id="O40">
+      <dia:attribute name="obj_pos">
+        <dia:point val="1.72467,87.7676"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="1.67467,86.7176;8.77467,90.8176"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="1.72467,87.7676"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="7"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="3"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#modes#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - LargePackage" version="0" id="O41">
+      <dia:attribute name="obj_pos">
+        <dia:point val="11.7247,87.7676"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="11.6747,86.7176;18.7747,90.8176"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="11.7247,87.7676"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="7"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="3"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#protocol#</dia:string>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - SmallPackage" version="0" id="O42">
+      <dia:attribute name="obj_pos">
+        <dia:point val="8.54557,92.9364"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="8.52057,92.0114;13.8256,94.7256"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="8.54557,92.9364"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="5.254999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.7641666734514412"/>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#root_context.py
+-------------------------------------------------
+- class RootContext#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="Calibri" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.38805555781714707"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="8.84557,93.4714"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="UML - SmallPackage" version="0" id="O43">
+      <dia:attribute name="obj_pos">
+        <dia:point val="2.44443,96.4475"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="2.41943,95.5225;7.72443,99.0128"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="2.44443,96.4475"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="5.254999999999999"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="2.5402777890857355"/>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#server.py
+-------------------------------------------------
+- class DummyServer
+- class ProxyServer(tcp.TCPServer)
+- class ConnectionHandler#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="Calibri" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.38805555781714707"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="2.74443,96.9825"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000ff"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.039999999105930328"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
       </dia:attribute>
     </dia:object>
   </dia:layer>
